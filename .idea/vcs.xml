@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/CCC_SERVICES" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CRP_FONTS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CRP_SERVICES" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DFXP_Converter/www" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Facnote" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HOMEPAGE_CORPORATE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/VIDEO_PLAYER" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Webservice_Corporate" vcs="Git" />
+  </component>
+</project>

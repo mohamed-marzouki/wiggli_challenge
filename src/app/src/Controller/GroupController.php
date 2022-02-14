@@ -4,7 +4,8 @@ namespace App\Controller;
 
 use App\Service\GroupService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -23,17 +24,21 @@ class GroupController extends AbstractController
     }
 
     /**
-     * @Route(
-     *     "/", name="index",
-     *     format="json",
-     *     requirements={
-     *       "_format": "json"
-     *     }
-     * )
+     * @Route("/", name="index")
+     * @return JsonResponse
      */
-    public function index(): Response
+    public function index(): JsonResponse
     {
         $result = $this->groupService->getGroups();
         return $this->json($result);
+    }
+
+    /**
+     * @Route("/new", name="new", methods={"POST"})
+     * @return JsonResponse
+     */
+    public function new(Request $request): JsonResponse
+    {
+        return $this->json($this->groupService->addGroup($request->request->get('group')));
     }
 }

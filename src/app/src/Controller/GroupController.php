@@ -33,10 +33,10 @@ class GroupController extends AbstractController
      */
     public function index(): Response
     {
-        $this->groupService->getGroups();
+        $groups = $this->groupService->getGroups();
         return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/GroupController.php',
+            'message' => 'sucess',
+            'result' => $groups,
         ]);
     }
 }

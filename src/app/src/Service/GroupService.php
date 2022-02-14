@@ -16,7 +16,7 @@ class GroupService
     /**
      * @return array
      */
-    public function getUserGroups(): array
+    public function getGroups(): array
     {
     }
 }

@@ -2,9 +2,9 @@
 
 namespace App\Tests\Functional\Service;
 
-use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
+use PHPUnit\Framework\TestCase;
 
-class GroupServiceTest extends WebTestCase
+class GroupServiceTest extends TestCase
 {
     public function testSomething(): void
     {

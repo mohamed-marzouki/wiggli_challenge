@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class GroupControllerTest extends WebTestCase
 {
-    private const GROUP_INDEX_URL = 'api/en/group';
+    private const GROUP_INDEX_URL = 'en/api/group';
 
     /**
      * @return void
@@ -16,14 +16,9 @@ class GroupControllerTest extends WebTestCase
         $client = static::createClient();
         $client->setServerParameter('HTTP_HOST', 'localhost:8007');
         $response = $client->request('GET', self::GROUP_INDEX_URL);
+        $client->followRedirect(true);
+        $this->assertResponseIsSuccessful();
 
-        //$this->assertJson();
-        //var_dump($client->getResponse());
-        /**
-        $response = $crawler = $client->request('GET', self::GROUP_INDEX_URL);
-        $this->assertArrayHasKey();
-var_dump($response->);die;
-//        $this->assertResponseIsSuccessful();
-//        $this->assertSelectorTextContains('h1', 'Hello World');**/
+        dd($client->getResponse()->getContent());
     }
 }

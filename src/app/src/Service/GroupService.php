@@ -33,9 +33,13 @@ class GroupService
      */
     public function getGroups(): array
     {
-        $result = [];
+        $result = [
+            'result' => [],
+            'message' => 'failed'
+        ];
         try {
-            $result = $this->groupRepository->findAll();
+            $result['result'] = $this->groupRepository->findAllGroups();
+            $result['message'] = 'success';
         } catch(DBALException $e){
             $this->logger->error($e->getMessage());
         }catch(\Exception $e){

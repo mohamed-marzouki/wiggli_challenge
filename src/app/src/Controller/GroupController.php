@@ -33,10 +33,7 @@ class GroupController extends AbstractController
      */
     public function index(): Response
     {
-        $groups = $this->groupService->getGroups();
-        return $this->json([
-            'message' => 'sucess',
-            'result' => $groups,
-        ]);
+        $result = $this->groupService->getGroups();
+        return $this->json($result);
     }
 }

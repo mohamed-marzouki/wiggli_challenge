@@ -31,7 +31,7 @@ class Group
     private $description;
 
     /**
-     * @ORM\ManyToMany(targetEntity=User::class, inversedBy="groups")
+     * @ORM\ManyToMany(targetEntity=User::class, inversedBy="groups", cascade={"remove"})
      */
     private $user;
 

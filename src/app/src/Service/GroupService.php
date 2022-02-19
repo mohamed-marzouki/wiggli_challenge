@@ -43,6 +43,7 @@ class GroupService
             'message' => 'failed'
         ];
         try {
+            $this->manager->persist();
             $result['result'] = $this->groupRepository->findAllGroups();
             $result['message'] = 'success';
         } catch(DBALException $e){

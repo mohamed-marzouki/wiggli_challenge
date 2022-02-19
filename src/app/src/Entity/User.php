@@ -45,7 +45,7 @@ class User
     private $phone;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Group::class, mappedBy="user")
+     * @ORM\ManyToMany(targetEntity=Group::class, mappedBy="user", cascade={"remove"})
      */
     private $groups;
 

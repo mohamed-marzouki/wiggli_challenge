@@ -33,3 +33,7 @@ services:
       - "./docker/nginx/logs/:/var/log/nginx"
     links:
       - php
+
+  mailer:
+    image: schickling/mailcatcher
+    ports: [ 1025, 1080 ]

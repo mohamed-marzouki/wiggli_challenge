@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e06f4d01-5aa5-4eca-b407-c14eba38da70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/config/packages/test/liip_fixtures.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/src/Command/TriggerProcessCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/src/Event/SendMailEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/src/EventListener/ExceptionListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/src/EventSubscriber/SendMailSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/src/Strategies/SendMailStrategy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/migrations/Version20220214213429.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/migrations/Version20220214232717.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/src/DataFixtures/GroupFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/src/DataFixtures/GroupFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/src/Entity/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/src/Entity/Group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/src/Service/GroupService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/src/Service/GroupService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/tests/Functional/Service/GroupServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tests/Functional/Service/GroupServiceTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -60,6 +60,8 @@
       <workItem from="1598361892283" duration="2991000" />
       <workItem from="1645039875938" duration="782000" />
       <workItem from="1645269903121" duration="12356000" />
+      <workItem from="1647170781435" duration="5263000" />
+      <workItem from="1647373043455" duration="609000" />
     </task>
     <servers />
   </component>
